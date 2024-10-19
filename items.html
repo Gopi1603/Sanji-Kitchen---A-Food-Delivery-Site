@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanji Kitchen - Items</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png">
+    <link rel="stylesheet" href="items.css">
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css">
+    <script src="cart.js" defer></script> 
+</head>
+<body>
+    <a href="index.html" class="home-icon">
+        <img src="./assets/images/home-outline.svg" alt="Home" />
+    </a>
+    
+<section class="section food-menu" id="food-menu">
+    <div class="container">
+
+        <h2 class="section-title">Restaurant Menu</h2>
+        <p class="section-text">
+            Choose from our delicious menu items.
+        </p>
+
+        <ul class="food-menu-list">
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-1.jpeg" alt="Fried Chicken">
+                </div>
+                <h3 class="food-name">Fried Chicken</h3>
+                <p class="food-price" data-price="10">Price: $10.00</p>
+                <button class="btn add-to-cart-btn" data-item="Fried Chicken" data-price="10">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-2.jpeg" alt="Burger">
+                </div>
+                <h3 class="food-name">Burger</h3>
+                <p class="food-price" data-price="8">Price: $8.00</p>
+                <button class="btn add-to-cart-btn" data-item="Burger" data-price="8">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-3.jpeg" alt="Biryani">
+                </div>
+                <h3 class="food-name">Chicken Biryani</h3>
+                <p class="food-price" data-price="12">Price: $12.00</p>
+                <button class="btn add-to-cart-btn" data-item="Chicken Biryani" data-price="12">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-4.jpeg" alt="Paneer Tikka">
+                </div>
+                <h3 class="food-name">Paneer Tikka</h3>
+                <p class="food-price" data-price="9">Price: $9.00</p>
+                <button class="btn add-to-cart-btn" data-item="Paneer Tikka" data-price="9">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-5.jpeg" alt="Butter Chicken">
+                </div>
+                <h3 class="food-name">Butter Chicken</h3>
+                <p class="food-price" data-price="15">Price: $15.00</p>
+                <button class="btn add-to-cart-btn" data-item="Butter Chicken" data-price="15">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-6.jpeg" alt="Samosa">
+                </div>
+                <h3 class="food-name">Samosa</h3>
+                <p class="food-price" data-price="5">Price: $5.00</p>
+                <button class="btn add-to-cart-btn" data-item="Samosa" data-price="5">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-7.jpeg" alt="Dosa">
+                </div>
+                <h3 class="food-name">Masala Dosa</h3>
+                <p class="food-price" data-price="7">Price: $7.00</p>
+                <button class="btn add-to-cart-btn" data-item="Masala Dosa" data-price="7">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-8.jpeg" alt="Chaat">
+                </div>
+                <h3 class="food-name">Pani Puri</h3>
+                <p class="food-price" data-price="6">Price: $6.00</p>
+                <button class="btn add-to-cart-btn" data-item="Pani Puri" data-price="6">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-9.jpeg" alt="Noodles">
+                </div>
+                <h3 class="food-name">Chili Chicken Noodles</h3>
+                <p class="food-price" data-price="10">Price: $10.00</p>
+                <button class="btn add-to-cart-btn" data-item="Chili Chicken Noodles" data-price="10">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-10.jpeg" alt="KFC">
+                </div>
+                <h3 class="food-name">KFC Chicken Bucket</h3>
+                <p class="food-price" data-price="20">Price: $20.00</p>
+                <button class="btn add-to-cart-btn" data-item="KFC Chicken Bucket" data-price="20">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-11.jpeg" alt="Pizza">
+                </div>
+                <h3 class="food-name">Veg Margherita Pizza</h3>
+                <p class="food-price" data-price="12">Price: $12.00</p>
+                <button class="btn add-to-cart-btn" data-item="Veg Margherita Pizza" data-price="12">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-12.jpeg" alt="Cool Drink">
+                </div>
+                <h3 class="food-name">Mango Lassi</h3>
+                <p class="food-price" data-price="4">Price: $4.00</p>
+                <button class="btn add-to-cart-btn" data-item="Mango Lassi" data-price="4">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-13.jpeg" alt="Cool Drink">
+                </div>
+                <h3 class="food-name">Masala Lemonade</h3>
+                <p class="food-price" data-price="3">Price: $3.00</p>
+                <button class="btn add-to-cart-btn" data-item="Masala Lemonade" data-price="3">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-14.jpeg" alt="Burger">
+                </div>
+                <h3 class="food-name">Cheese Burger</h3>
+                <p class="food-price" data-price="9">Price: $9.00</p>
+                <button class="btn add-to-cart-btn" data-item="Cheese Burger" data-price="9">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-15.jpeg" alt="Pasta">
+                </div>
+                <h3 class="food-name">Pasta Arrabbiata</h3>
+                <p class="food-price" data-price="11">Price: $11.00</p>
+                <button class="btn add-to-cart-btn" data-item="Pasta Arrabbiata" data-price="11">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-16.jpeg" alt="Ice Cream">
+                </div>
+                <h3 class="food-name">Chocolate Ice Cream</h3>
+                <p class="food-price" data-price="5">Price: $5.00</p>
+                <button class="btn add-to-cart-btn" data-item="Chocolate Ice Cream" data-price="5">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-17.jpeg" alt="Fries">
+                </div>
+                <h3 class="food-name">French Fries</h3>
+                <p class="food-price" data-price="4">Price: $4.00</p>
+                <button class="btn add-to-cart-btn" data-item="French Fries" data-price="4">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-18.jpeg" alt="Bhel Puri">
+                </div>
+                <h3 class="food-name">Bhel Puri</h3>
+                <p class="food-price" data-price="5">Price: $5.00</p>
+                <button class="btn add-to-cart-btn" data-item="Bhel Puri" data-price="5">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-19.jpeg" alt="Pav Bhaji">
+                </div>
+                <h3 class="food-name">Pav Bhaji</h3>
+                <p class="food-price" data-price="8">Price: $8.00</p>
+                <button class="btn add-to-cart-btn" data-item="Pav Bhaji" data-price="8">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-20.jpeg" alt="Paneer Butter Masala">
+                </div>
+                <h3 class="food-name">Paneer Butter Masala</h3>
+                <p class="food-price" data-price="14">Price: $14.00</p>
+                <button class="btn add-to-cart-btn" data-item="Paneer Butter Masala" data-price="14">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-21.jpeg" alt="Tandoori Chicken">
+                </div>
+                <h3 class="food-name">Tandoori Chicken</h3>
+                <p class="food-price" data-price="16">Price: $16.00</p>
+                <button class="btn add-to-cart-btn" data-item="Tandoori Chicken" data-price="16">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-22.jpeg" alt="Hakka Noodles">
+                </div>
+                <h3 class="food-name">Hakka Noodles</h3>
+                <p class="food-price" data-price="9">Price: $9.00</p>
+                <button class="btn add-to-cart-btn" data-item="Hakka Noodles" data-price="9">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-23.jpeg" alt="Spring Rolls">
+                </div>
+                <h3 class="food-name">Spring Rolls</h3>
+                <p class="food-price" data-price="7">Price: $7.00</p>
+                <button class="btn add-to-cart-btn" data-item="Spring Rolls" data-price="7">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-24.jpeg" alt="Momos">
+                </div>
+                <h3 class="food-name">Steamed Momos</h3>
+                <p class="food-price" data-price="6">Price: $6.00</p>
+                <button class="btn add-to-cart-btn" data-item="Steamed Momos" data-price="6">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-25.jpeg" alt="Fruit Salad">
+                </div>
+                <h3 class="food-name">Fruit Salad</h3>
+                <p class="food-price" data-price="5">Price: $5.00</p>
+                <button class="btn add-to-cart-btn" data-item="Fruit Salad" data-price="5">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-26.jpeg" alt="Chocolate Cake">
+                </div>
+                <h3 class="food-name">Chocolate Cake</h3>
+                <p class="food-price" data-price="6">Price: $6.00</p>
+                <button class="btn add-to-cart-btn" data-item="Chocolate Cake" data-price="6">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-27.jpeg" alt="Gulab Jamun">
+                </div>
+                <h3 class="food-name">Gulab Jamun</h3>
+                <p class="food-price" data-price="4">Price: $4.00</p>
+                <button class="btn add-to-cart-btn" data-item="Gulab Jamun" data-price="4">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-28.jpeg" alt="Pudding">
+                </div>
+                <h3 class="food-name">Vanilla Pudding</h3>
+                <p class="food-price" data-price="5">Price: $5.00</p>
+                <button class="btn add-to-cart-btn" data-item="Vanilla Pudding" data-price="5">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-29.jpeg" alt="Chaas">
+                </div>
+                <h3 class="food-name">Chaas (Buttermilk)</h3>
+                <p class="food-price" data-price="3">Price: $3.00</p>
+                <button class="btn add-to-cart-btn" data-item="Chaas" data-price="3">Add to Cart</button>
+            </li>
+            
+            <li class="food-menu-card">
+                <div class="card-banner">
+                    <img class="item-image" src="./assets/images/food-30.jpeg" alt="Cold Coffee">
+                </div>
+                <h3 class="food-name">Cold Coffee</h3>
+                <p class="food-price" data-price="4">Price: $4.00</p>
+                <button class="btn add-to-cart-btn" data-item="Cold Coffee" data-price="4">Add to Cart</button>
+            </li>
+            
+            
+            
+
+        </ul>
+
+        <!-- Button to view cart and proceed to checkout -->
+        <div class="cart-section">
+            <button class="btn view-cart-btn" onclick="location.href='cart.html'">
+                <img src="assets/images/cart.svg" alt="Cart Icon" class="cart-icon" width="20" height="20"></button>
+        </div>
+        
+        
+        
+
+    </div>
+</section>
+
+</body>
+</html>

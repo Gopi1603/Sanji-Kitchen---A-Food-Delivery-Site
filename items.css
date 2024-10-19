@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.home-icon {
+    position: fixed; /* Keeps the icon fixed on the screen */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    z-index: 1000; /* Ensures it stays above other elements */
+    background-color: #ff5722; /* Orange background */
+    border-radius: 50%; /* Makes the background circular */
+    padding: 10px; /* Adds space around the icon */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Black shadow */
+    transition: transform 0.3s; /* Adds a hover effect */
+}
+
+.home-icon img {
+    width: 24px; /* Size of the icon */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.home-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.food-menu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.item-image {
+    width: 100%; /* Full width of the parent */
+    height: 100%; /* Full height of the parent */
+    object-fit: cover; /* Cover the area, cropping as necessary */
+    position: absolute; /* Position the image absolutely within the card-banner */
+    top: 50%; /* Center the image vertically */
+    left: 50%; /* Center the image horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    transition: transform 0.2s ease; /* Animation for zoom effect on hover */
+}
+
+.food-menu-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.food-menu-card {
+    margin: 20px; /* Space between cards */
+    text-align: center; /* Center text in the card */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation for hover effect */
+}
+
+.card-banner {
+    width: 150px; /* Set a fixed width for the round image */
+    height: 150px; /* Set a fixed height for the round image */
+    overflow: hidden; /* Hide any overflow */
+    border-radius: 50%; /* Make the image round */
+    margin: 0 auto; /* Center the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Initial shadow effect */
+    position: relative; /* Positioning context for the image */
+}
+
+.card-banner img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.food-name {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.food-price {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+
+.food-menu-card:hover .item-image {
+    transform: translate(-50%, -50%) scale(1.1); /* Slightly zoom in on hover */
+}
+
+.food-menu-card:hover .card-banner {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); /* Increase shadow on hover */
+}
+
+.food-name, .food-price {
+    color: #000000; /* Change text color to white for visibility */
+}
+
+.add-to-cart-btn {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #e64a19;
+}
+
+
+.cart-section {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;  
+}
+
+
+.view-cart-btn {
+    background-color: #e64a19; /* Button color */
+    color: white;              /* Text color */
+    border: none;              /* Remove default border */
+    border-radius: 50%;        /* Round button */
+    width: 60px;               /* Fixed width for circle */
+    height: 60px;              /* Fixed height for circle */
+    display: flex;             /* Flexbox for centering */
+    align-items: center;       /* Center icon vertically */
+    justify-content: center;   /* Center icon horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.view-cart-btn:hover {
+    background-color: #d45d0d; /* Change color on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Increased shadow on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Animation for other elements */
+@keyframes animate-background {
+    0% { background-color: white; }
+    50% { background-color: #f0f0f0; }
+    100% { background-color: white; }
+}
+
+body:hover {
+    animation: animate-background 0.5s ease-in-out; /* Animate background color on hover */
+}
+
+.cart-icon {
+    width: 24px;              /* Icon size */
+    height: 24px;             /* Icon size */
+}
