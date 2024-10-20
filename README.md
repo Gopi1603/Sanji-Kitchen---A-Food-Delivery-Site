@@ -14,7 +14,7 @@ Here’s how the site looks across different devices:
 - **Tablet View**  
 - **Mobile View**
 
-![Responsive Views](./Gopi_chakradhar.png) 
+![Responsive Views](./Gopi_Chakradhar.png) 
 
 ## ✨ **Features**
 
